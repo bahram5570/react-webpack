@@ -30,12 +30,16 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|jp(e*)g|svg|gif)$/,
-        use: ["file-loader"],
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: "file-loader",
+          },
+        ],
       },
       {
         test: /\.svg$/,
-        use: ["@svgr/webpack"],
+        use: ["@svgr/webpack", "file-loader"],
       },
     ],
   },

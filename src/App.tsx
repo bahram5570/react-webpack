@@ -1,14 +1,20 @@
 import Sub from "./Sub";
-import './App.css'
+import "./app.css";
+import pic from "./pic.png";
+import { ReactComponent as SvgFile } from "./svg.svg";
 
 const App = () => {
   const someTxt = "Testing 'no-trailing-spaces' rule.";
 
   return (
-    <div>
+    <div className="main">
       <h1>Custom App</h1>
 
       <button>{someTxt}</button>
+
+      <img src={pic} alt="pic" />
+
+      <SvgFile />
 
       <Sub txt="quotes" />
     </div>

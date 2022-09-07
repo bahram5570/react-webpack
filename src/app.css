@@ -3,3 +3,13 @@
     padding: 20px;
     border-radius: 30px;
 }
+
+img {
+    width: 500px;
+    height: auto;
+}
+
+svg {
+    width: 300px;
+    height: auto;
+}
