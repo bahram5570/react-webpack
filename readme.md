@@ -1,3 +1,3 @@
-https://www.carlrippon.com/creating-react-app-with-typescript-eslint-with-webpack5/
+https://www.npmjs.com/package/eslint-config-airbnb-typescript
 
-https://github.com/jsx-eslint/eslint-plugin-react
+https://airbnb.io/javascript/react/

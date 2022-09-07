@@ -5,13 +5,11 @@
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   },
   "plugins": ["@typescript-eslint", "react-hooks", "react"],
-  "extends": [
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
+  "extends": ["plugin:react/recommended", "airbnb", "airbnb-typescript"],
   "settings": {
     "react": {
       "pragma": "React",
@@ -21,6 +19,18 @@
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/button-has-type": "off",
-    "quotes": ["error", "double"]
+    "linebreak-style": "off",
+    "arrow-body-style": "off",
+    "no-trailing-spaces": "off",
+    "no-multiple-empty-lines": "warn",
+    "quotes": "off",
+    "@typescript-eslint/quotes": ["error", "double"],
+    "react/function-component-definition": [
+      "off",
+      {
+        "namedComponents": ["arrow-function", "function-declaration"],
+        "unnamedComponents": ["arrow-function", "function-expression"]
+      }
+    ]
   }
 }
